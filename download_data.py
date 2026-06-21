@@ -26,12 +26,3 @@ def download_small_data():
 
 def load_small_data():
     return load_dataset("json", data_files="./data/preference_small.jsonl", split="train")
-
-ds = load_small_data()
-print(ds[0]['prompt'])
-print(ds[0]['chosen'])
-print(ds[0]['rejected'])
-print("---------------")
-print(ds[1]['prompt'])
-print(ds[1]['chosen'])
-print(ds[1]['rejected'])
